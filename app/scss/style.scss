@@ -87,7 +87,6 @@ h1{
     position: relative;
     box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 50px;
-    transition: all 0.3s;
     &:hover{
         .blogers-item__content{
             display: none;
@@ -100,6 +99,7 @@ h1{
         opacity: 50%;
         height: 311px;
         width: 311px;
+        transition: all .5s;
     }
     &__content{
         position: absolute;
@@ -156,5 +156,26 @@ h1{
         }
     }
 }
-
-
+.footer__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__contact{
+    &-link{
+        li{
+            display: inline-block;
+            margin-left: 50px;
+        }
+    }
+    &-soc{
+        padding-left: 300px;
+        margin-top: 30px;
+        li{
+            display: inline-block;
+            & + li{
+                margin-left: 30px;
+            }
+        }
+    }
+}
