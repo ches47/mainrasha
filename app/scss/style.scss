@@ -25,8 +25,136 @@
         color: $text;
     }
 }
-
-
-
+.breadcrumbs__inner{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    li{
+        display: inline-block;
+    }
+    .breadcrumbs__link--active{
+        padding: 3px 11px;
+        background-color: #fff;
+        background-color: $text;
+        border-radius: 20px;
+        opacity: 80%;
+        color: #6E105E;
+    }
+}
+h1{
+    text-align: center;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+}
+.blogers__sorting{
+    li{
+        display: inline-block;
+        & + li{
+            margin-left: 50px;
+        }
+    }
+    .sorting{
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 600;
+    }
+    .sorting-dropdown{
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            right: -27px;
+            top: -3px;
+            width: 24px;
+            height: 24px;
+            background-image: url(../images/arrow-bottom.svg);
+        }
+    }
+}
+.blogers__inner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+}
+.blogers-item{
+    height: 311px;
+    width: 311px;
+    position: relative;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
+    transition: all 0.3s;
+    &:hover{
+        .blogers-item__content{
+            display: none;
+        }
+        img{
+            opacity: 100%;
+        }
+    }
+    img{
+        opacity: 50%;
+        height: 311px;
+        width: 311px;
+    }
+    &__content{
+        position: absolute;
+        bottom: 20px;
+        left: 12px;
+    }
+    &__name{
+        font-size: 30px;
+        line-height: 36px;
+        font-weight: 700;
+    }
+    &__soc{
+        li{
+            display: inline-block;
+            padding-left: 34px;
+        }
+        .blogers-item__youtube{
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url(../images/youtube-icon.svg);
+                left: 0;
+                top: 0;
+                width: 24px;
+                height: 16px;
+            }
+        }
+        .blogers-item__vk{
+            position: relative;
+            margin-left: 20px;
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url(../images/vk-icon.svg);
+                left: 0;
+                top: 0;
+                width: 24px;
+                height: 14px;
+            }
+        }
+        .blogers-item__insta{
+            margin-top: 10px;
+            position: relative;
+            &::before{
+                content: '';
+                position: absolute;
+                background-image: url(../images/insta-icon.svg);
+                left: 0;
+                top: 0;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
 
 
