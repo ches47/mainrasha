@@ -2,7 +2,29 @@
 @import 'global';
 @import 'fonts';
 
-
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 600;
+}
+.menu{
+    ul{
+        li{
+            display: inline-block;
+            & + li{
+                margin-left: 30px;
+            }
+        }
+    }
+}
+.languages{
+    span{
+        color: $text;
+    }
+}
 
 
 
