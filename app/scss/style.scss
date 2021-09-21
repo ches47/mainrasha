@@ -179,3 +179,127 @@ h1{
         }
     }
 }
+.person__inner{
+    display: flex;
+}
+.person__info{
+    padding: 0px 40px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25); 
+    &-title{
+        padding: 30px 0px;
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 800;
+        border-bottom: 1px solid #EFF3F5;
+    }
+    &-soc{
+        padding: 30px 0px;
+        border-bottom: 1px solid #EFF3F5;
+        a{
+            padding-left: 84px;
+            span{
+                display: block;
+            }
+        }
+        .person-box{
+            li{
+                display: inline-block;
+                & + li{
+                    margin-left: 134px;
+                }
+                .person__youtube{
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    span{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 64px;
+                        height: 64px;
+                        background-image: url(../images/person-youtube.png);
+                    }
+                }
+                .person__vk{
+                    position: relative;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    span{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 64px;
+                        height: 64px;
+                        background-image: url(../images/person-vk.png);
+                    }
+                }
+            }
+        }
+        .person__insta{
+            margin-top: 30px;
+            position: relative;
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 36px;
+                    span{
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 500;
+                    }
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 64px;
+                        height: 64px;
+                        background-image: url(../images/person-insta.png);
+                    }
+        }
+    }
+    &-channel{
+        padding: 30px 0px;
+        .person__channel-box{
+            max-height: 173px;
+            overflow-x: hidden;
+            &::-webkit-scrollbar{
+                width: 4px;
+                border-radius: 4px;
+            }
+            &::-webkit-scrollbar-track{
+                background-color: #969696;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: #EFF3F5;
+                width: 10px;
+                border-radius: 4px;
+            }
+            .person__channel-title{
+                font-size: 30px;
+                font-weight: 700;
+                margin: 0px 0px 10px 0px;
+            }
+            .person__channel-text{
+                font-size: 16px;
+                line-height: 24px;
+                font-weight: 500;
+                margin: 0;
+            }
+        }
+    }
+}
